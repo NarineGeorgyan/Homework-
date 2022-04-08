@@ -1,0 +1,19 @@
+table, th, td{
+    border: 2px solid rgb(22, 22, 21);
+    text-transform: capitalize;
+}
+.head-caption th{
+    color: red;
+    text-align: center;
+
+}
+.head-caption span{
+    text-transform: none;
+}
+.body-caption span{
+   text-transform: capitalize;
+  
+}
+.quality{
+    text-transform: uppercase;
+}
