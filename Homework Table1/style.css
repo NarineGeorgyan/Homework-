@@ -1,0 +1,10 @@
+
+table {
+     border: 3px solid rgb(106, 142, 131);
+     width: 400px;
+    }
+td, th { 
+    border: 3px solid rgb(106, 142, 131);
+    text-align: center;
+    padding: 2px;
+   }
