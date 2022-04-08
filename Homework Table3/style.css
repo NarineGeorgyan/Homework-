@@ -1,0 +1,23 @@
+
+table, th,td{
+    width: 500px;
+    border: 2px solid;
+}
+
+tr{
+   
+    text-transform: uppercase;
+}
+h1{
+    text-align: left;
+    margin-bottom: 20px
+    
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.title{
+    font-weight: 700;
+    margin-bottom:12px;
+    text-align: left;
+}
