@@ -1,0 +1,194 @@
+/*main page style*/
+
+h1 {
+   text-align: center;
+   color: blueviolet;
+   margin-bottom: 10px;
+}
+.description{
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.main-wikipedia-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: 300px;
+   
+   
+}
+.main-wikipedia-list li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:20px;
+    padding: 10px 15px;
+
+    
+
+}
+.main-wikipedia-list li img{
+    margin-left: -40px;
+    margin-bottom: -35px;
+  }
+
+.main-wikipedia-list li a{
+    display: flex;
+    flex-direction: column ;
+    text-decoration: none;
+    color: rgb(49, 48, 48);
+    
+}
+.main-wikipedia-list li a:focus,
+.main-wikipedia-list li a:hover{
+    color: rgb(138, 128, 137);
+}
+.main-wikipedia-list li a em{
+    font-size: 12px;
+}
+/*wikibook*/
+.wikibook{
+    width: 100%;
+    margin: 10px 10px;
+}
+.wikibook h2 {
+    font-size: 24px;
+    line-height: 14px;
+    padding: 5px 17px;
+    margin-bottom: 10px;
+}
+.wikibook p{
+    padding: 10px 25px;
+    font-size: 18px;
+}
+.wikibook div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+ }
+div>a{
+    padding: 10px;
+    margin-left: 15px;
+}
+
+
+/* tutotials style*/
+.tutorials h2{
+    font-size: 24px;
+    color: brown;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    text-align: center;
+}
+.tutorials p{
+    color: blue;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    background-color: rgb(215, 240, 240);
+    border: 1px solid black;
+
+}
+.container h3{
+    text-transform: capitalize;
+}
+
+/* xndum em nael uzum ei 5.1 anel bajc cher stacvum*/
+.nested{
+    counter-reset: item;
+
+
+}
+.nested li::before {
+    counter-increment: item;
+    content: counters(item, ".") " ";
+  
+  }
+  /*wikiquote style*/
+
+  .wikiquote{
+   
+      display: flex;
+      flex-direction: column;
+  }
+  .wikiquote>div{
+
+      border: 1px solid #c8ccd1;
+      box-shadow: 0 1px 1px rgb(0 0 0 / 15%);
+      padding: 2px;
+      margin-bottom: 30px;
+      background-color: #f8f9fa;
+  }
+  div>p{
+      padding: 10px 15px;
+      font-size: 24px;
+     
+  }
+  div small, span{
+      font-size: 15px;
+  }
+  span{
+      margin-left: 10px;
+      padding: 10px 15px;
+  }
+  .quote-title{
+      font-size: 28px;
+      line-height: 14px;
+      padding: 15px;
+      color: #838d9b;
+  }
+  .wikiquote-info-list{
+      width: 300px;
+      display: flex;
+      list-style-type: none;
+      margin-left: auto;
+   
+    
+      
+  }
+  .wikiquote-info-list-item{
+   margin-left:auto;
+   font-size: 15px;
+  }
+  div b{
+      margin-left: 70%;
+      
+  } 
+  /* footer style*/
+  .footer-navigation{
+      width: 100%;
+      background-color: #2f2f30;
+  }
+  .footer-navigation-list{
+    list-style-type: none;
+    display: flex; 
+    justify-content: center;
+    padding: 14px 30px;
+  }
+  .footer-navigation-list-item a{
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 14px;
+      padding: 7px, 14px;
+      text-decoration: none;
+      text-transform: capitalize;
+      margin-left: 25px;
+
+      
+
+  }
+  .footer-navigation-list-item a:focus,
+  .footer-navigation-list-item a:hover{
+      background-color: #f8f9fa;
+      color: #2f2f30    ;
+  }
