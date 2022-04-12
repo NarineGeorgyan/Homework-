@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Device</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+</head>
+<body>
+    <header class="main-header">
+        <div class ="container">
+            <nav class="main-navigation">
+                <div class = "main-logo">
+                    <svg class="logo"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="5.75cm" height="1.27cm">
+                        <text font-family="Gilroy" fill="rgb(0, 0, 0)" font-weight="bold" font-size="48px" x="0px" y="36.062px">DEVICE</text>
+                    </svg>
+                </div> 
+                <div class = "search">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input type = "search" id="site-search" name="q"  size="30" spellcheck placeholder="Поиск по сайту"/>
+                </div>
+                <ul class="user-navigation-list">
+                    <li>Валентин Петухов
+                        <button>Выйти</button>
+                    </li>
+                    <li>Сравнить</li>
+                    <li>Корзина</li>
+                </ul>  
+                <ul class="site-navigation-list">
+                    <li> 
+                        <a href ="#">Каталог товаров</a>
+                    </li>
+                    <li> 
+                        <a href ="#">Каталог Доставка</a>
+                    </li>
+                    <li> 
+                        <a href ="#">Контакты</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="vissually-hidden">Device</h1>
+        <div class ="container">
+            <h2>Моноподы для селфи</h2>
+            <ul class="breadcrubs">
+                <li>
+                    <a class="current-item">Главная</a>
+                </li>
+                <li>
+                    <a href="#">Каталог товаров</a>
+                </li>
+                <li>
+                    <a href="#">Моноподы для селфи</a>
+                </li>
+            </ul>
+                 <h3>Фильтр:</h3>  
+                 <form action="#" method="get">
+                    <div class="sort-box">
+                        <h4 class="sort-type-title">Стоимость</h4> 
+                           <label for="price"></label>
+                           <input id = "price" name ="price" type="range" min="0" max="5000" step="10"/>
+                    </div>
+                    <div class="sort-box">
+                       <h4 class="sort-type-title">Цвет</h4> 
+                           <div class="color-checkbox"> 
+                               <label for="black">Черный</label>
+                                 <input id ="black" type="checkbox" value="Черный" checked/>
+                               <label for="white">Белый</label>
+                                 <input id ="blue" type="checkbox" value="Белый"/>
+                               <label for="blue">Синий</label>
+                                 <input id ="color" type="checkbox" value="Синий" checked/>
+                               <label for="red">Красный</label>
+                                 <input id ="red" type="checkbox" value="Красный" checked/>
+                               <label for="rose">Розовый</label>
+                                 <input id ="rose" type="checkbox" value="Розовый"/>
+                           </div>
+                        
+                    </div>
+                    <div class="sort-box">
+                       <h4 class="sort-type-title">Bluetooth</h4> 
+                            <label for="yes">Есть</label>
+                                <input id ="yes" type="radio" value="yes" name="answer" checked/>
+                            <label for="no">Нет</label>
+                                <input id ="no" type="radio" value="no" name="answer"/>
+                    </div>
+                    <button value="Показать" name="show" class="btn btn-show">Показать</button>
+                 </form>             
+            </aside>
+            <section>
+                <h3>Сортировка:</h3>
+                <nav class="sort-navigation">
+                    <ul class="sort-navigation=-list">
+                        <li>
+                            По цене
+                        </li>
+                        <li>
+                            По типу
+                        </li>
+                        <li>
+                            По популярности 
+                        </li>
+                    </ul>
+                </nav>
+                
+            </section>
+        </div>
+    </main>
+</body>
+</html>
