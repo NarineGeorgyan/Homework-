@@ -20,64 +20,88 @@
                         <text font-family="Gilroy" fill="rgb(0, 0, 0)" font-weight="bold" font-size="48px" x="0px" y="36.062px">DEVICE</text>
                     </svg>
                 </div> 
-                <div class = "search">
-                    <span class="glyphicon glyphicon-search"></span>
-                    <input type = "search" id="site-search" name="q"  size="30" spellcheck placeholder="Поиск по сайту"/>
-                </div>
-                <ul class="user-navigation-list">
-                    <li>Валентин Петухов
-                        <button>Выйти</button>
-                    </li>
-                    <li>Сравнить</li>
-                    <li>Корзина</li>
-                </ul>  
-                <ul class="site-navigation-list">
-                    <li> 
-                        <a href ="#">Каталог товаров</a>
-                    </li>
-                    <li> 
-                        <a href ="#">Каталог Доставка</a>
-                    </li>
-                    <li> 
-                        <a href ="#">Контакты</a>
-                    </li>
+                <div class="wrapper">
+               
+                    <div class = "search">
+                        <span class="glyphicon glyphicon-search"></span>
+                        <input type = "search" id="site-search" name="q"  size="30" spellcheck placeholder="Поиск по сайту"/>
+                    </div>
+                    <ul class="user-navigation-list">
+                        <li >
+                            <ion-icon name="person"></ion-icon>
+                            Валентин Петуховpx
+                            <button class="btn btn-log-out">Выйти</button>
+                        </li>
+                        <li>
+                            <ion-icon name="git-compare"></ion-icon>
+                            Сравнить
+                        </li>
+                        <li>
+                            <ion-icon name="cart-sharp"></ion-icon>
+                            Корзина
+                        </li>
+                    </ul> 
+                </div> 
+                <div class ="wrapper">
+                    
+                    <a href ="#">Каталог товаров</a>
+                    <ul class="site-navigation-list">
+                    
+                        <li> 
+                            <a href ="#">Доставка</a>
+                        </li>
+                        <li> 
+                            <a href ="#">Гарантия</a>
+                        </li>
+                        <li class="site-navigation-contact"> 
+                            <a href ="#">Контакты</a>
+                        </li>
 
-                </ul>
-
+                    </ul>
+                </div> 
             </nav>
         </div>
     </header>
     <main>
-        <h1 class="vissually-hidden">Device</h1>
+        
         <div class ="container">
-            <h2>Моноподы для селфи</h2>
-            <ul class="breadcrubs">
-                <li>
-                    <a href="#">Главная</a>
-                </li>
-                <li>
-                    <a href="#">Каталог товаров</a>
-                </li>
-                <li class="breadcrubs-current">
-                    Моноподы для селфи
-                </li>
-            </ul>
-                 <h3>Фильтр:</h3>  
+            <h1 class="vissually-hidden">Device</h1>
+            <section class="breadcrubs-part">
+                <h2 class="breadcrubs-part-title">Моноподы для селфи</h2>
+                <ul class="breadcrubs">
+                    <li>
+                        <a href="#">Главная
+                            <ion-icon name="chevron-forward-sharp"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог товаров
+                            <ion-icon name="chevron-forward-sharp"></ion-icon>
+                        </a>
+                    </li>
+                    <li class="breadcrubs-current">
+                        Моноподы для селфи
+                    </li>
+                </ul>
+            </section>
+           <div class="catalog-column">
+            <aside class="form">
+                 <h3 class="form-title">Фильтр:</h3>  
                  <form action="#" method="get">
                     <div class="sort-box">
                         <h4 class="sort-type-title">Стоимость</h4> 
                            <label for="price"></label>
                            <input id = "price" name ="price" type="range" min="0" max="5000" step="10"/>
-                    </div>
+                   </div>
                     <div class="sort-box">
                        <h4 class="sort-type-title">Цвет</h4> 
                            <div class="color-checkbox"> 
                                <label for="black">Черный</label>
                                  <input id ="black" type="checkbox" value="Черный" checked/>
                                <label for="white">Белый</label>
-                                 <input id ="blue" type="checkbox" value="Белый"/>
+                                 <input id ="white" type="checkbox" value="Белый"/>
                                <label for="blue">Синий</label>
-                                 <input id ="color" type="checkbox" value="Синий" checked/>
+                                 <input id ="blue" type="checkbox" value="Синий" checked/>
                                <label for="red">Красный</label>
                                  <input id ="red" type="checkbox" value="Красный" checked/>
                                <label for="rose">Розовый</label>
@@ -95,11 +119,11 @@
                     <button value="Показать" name="show" class="btn btn-show">Показать</button>
                  </form>             
             </aside>
-            <section>
+            <section class="sort">
                 
                 <h3>Сортировка:</h3>
                 <nav class="sort-navigation">
-                    <ul class="sort-navigation=-list">
+                    <ul class="sort-navigation-list">
                         <li>
                             По цене
                         </li>
@@ -114,38 +138,42 @@
 
                 <ul class="catalogs-list">
                     <li class="catalogs-list-item">
-                        <img class="catalogs-item-image" src="./images/item-1.jpg" alt="Любительская селфи-палка" title="Любительская селфи-палка" width="350px" height="250px" />
+                        <img class="catalogs-item-image" src="./images/item-1.jpg" alt="Любительская селфи-палка" title="Любительская селфи-палка"  />
                         <p class="catalogs-list-name">Любительская селфи-палка</p>
                         <span class="catalogs-list-price">500 руб.</span>
                     </li>
                     <li class="catalogs-list-item">
-                        <img class="catalogs-item-image" src="./images/item-2.jpg" alt="Профессиональная селфи-палка " title="Профессиональная селфи-палка " width="350px" height="250px" />
+                        <img class="catalogs-item-image" src="./images/item-2.jpg" alt="Профессиональная селфи-палка " title="Профессиональная селфи-палка " />
                         <p class="catalogs-list-name">Профессиональная селфи-палка </p>
                         <span class="catalogs-list-price">1900 руб.</span>
                     </li>
                     <li class="catalogs-list-item">
-                        <img class="catalogs-item-image" src="./images/item-3.jpg" alt="Непотопляемая селфи-палка" title="Непотопляемая селфи-палка" width="350px" height="250px" />
+                        <img class="catalogs-item-image" src="./images/item-3.jpg" alt="Непотопляемая селфи-палка" title="Непотопляемая селфи-палка"  />
                         <p class="catalogs-list-name">Непотопляемая селфи-палка</p>
                         <span class="catalogs-list-price">2500 руб.</span>
                     </li>
                     <li class="catalogs-list-item">
-                        <img class="catalogs-item-image" src="./images/item-4.jpg" alt="Селфи-палка «Следуй за мной»" title="Селфи-палка «Следуй за мной»" width="350px" height="250px" />
+                        <img class="catalogs-item-image" src="./images/item-4.jpg" alt="Селфи-палка «Следуй за мной»" title="Селфи-палка «Следуй за мной»"  />
                         <p class="catalogs-list-name">Селфи-палка «Следуй за мной»</p>
                         <span class="catalogs-list-price">4900 руб.</span>
                     </li>
 
                 </ul>
-                <div class="pagination">
-                    <div clasa="wrapper">
-                        <button>Назад</button>
+                </section>
+            </div>
+                <section class="pagination">
+                    <h2 class="vissualy-hidden" >pagination</h2>
+                    <p><button>Назад</button></p>
+                        
                         <ul class="paginnation-list">
                             <li><a href="#">1</a></li>
                             <li><a class="paginnation-current">2</a></li>
                             <li><a href="#">3</a></li>
                         </ul>
-                        <button>Вперед</button>
-                    </div>
-                </div>
+                    <p> <button>Вперед</button></p>
+                       
+                   
+               
          
             </section>
         </div>
@@ -224,5 +252,7 @@
             <b>Тел.: +7 (495) 495-95-95   </b>
         </div>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
