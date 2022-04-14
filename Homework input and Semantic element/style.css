@@ -88,11 +88,19 @@ body{
     margin-left: 150px;
 }
 .btn-log-out{
+    display: block;
     font-size: 15px;
     font-family: 'Maven Pro', sans-serif;
     color: #c8b678;
     background-color: transparent;
     border: none;
+    padding: 0 5px;
+}
+.user-navigation-list>li:first-child{
+    display: flex;
+    flex-direction: row;
+  
+ 
 }
 /*main style*/
 
@@ -102,6 +110,7 @@ body{
 ion-icon {
     font-size: 12px;
     font-weight: 700;
+    margin-right:7px;
     
   }
 .breadcrubs-part-title{
@@ -211,13 +220,14 @@ label{
    
 }
 h3{
-    background-color:#ebebeb41;
-    min-height: 66px;
+    margin: 0;
+    min-height: 50px;
     font-weight: 700;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
-    background-color: darkgray;
+    background-color:lightgrey;
+    margin-bottom: 30px;
   
 }
 
@@ -263,4 +273,61 @@ h3{
 .pagination-list a.pagination-current{
     color: black;
     font-weight: 700;
+}
+/*footer style*/
+.footer{
+    width: 1140px;
+    min-height: 225px;
+    background-color: #464646;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+
+    
+  
+}
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    
+}
+.address{
+   margin-right: auto;
+}
+a[href^="mailto"]::before {
+    content: "📧 ";
+}
+.social-navigation-list{
+    width: 530px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.social-navigation-list>li{
+
+  align-items: center;
+   margin-left: 15px;
+ 
+
+}
+.site-navigation-list li a{
+    
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.footer-wrapper text{
+    fill: #c8b678;
+}
+.footer-wrapper ion-icon{
+    color: #c8b678;
 }
