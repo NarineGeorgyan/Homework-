@@ -150,13 +150,17 @@ input[type="search"]:focus,input[type="search"]:hover{
 
 /* xndum em nael uzum ei 5.1 anel bajc cher stacvum*/
 .nested{
+    list-style: none;
     counter-reset: item;
 
 
 }
-.nested li::before {
+.nested li{
     counter-increment: item;
-    content: counters(item, ".") " ";
+}
+.nested li::before {
+    
+    content:"5." counters(item, ".") " ";
   
   }
   /*wikiquote style*/
