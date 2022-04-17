@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0197)http://127.0.0.1:5500/form/index.html?firstName=Narine&firstName=Bombasnnnto&email=test90%40mailinator.com&email=test90%40mailinator.com&password=112555555555&month=5&day=15&year=2022&gender=on&q=# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Form</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+<link rel="stylesheet" href="./Form_files/style.css"></head>
+<body>
+ <main>
+    <section>
+        <h1>Sign up</h1>
+        <span> Its quick and easy.</span>
+        <form action="http://127.0.0.1:5500/form/index.html?firstName=Narine&amp;firstName=Bombasnnnto&amp;email=test90%40mailinator.com&amp;email=test90%40mailinator.com&amp;password=112555555555&amp;month=5&amp;day=15&amp;year=2022&amp;gender=on&amp;q=#" method="get">
+            <div class="name">
+                <label for="firstName" class="vissualy-hidden"> FirstName</label>
+                <input id="firstName" type="text" name="firstName" title="Please enter a first name" placeholder="John" required="">
+                <label for="lastName" class="vissualy-hidden"> lastName</label>
+                <input id="lastName" type="text" name="firstName" title="Please enter a last name" placeholder="Doe" required="">
+            </div>
+            <div>   
+                <label class="vissualy-hidden" for="email">Email</label>
+                <input id="email" type="email" name="email" inputmode="email" title="Please enter an email address" placeholder="John@mail.com" required="">
+            </div>
+            <div>
+                <label for="repeat-email" class="vissualy-hidden">Repeat-email</label>
+                <input id="repeat-email" type="email" name="email" inputmode="email" title="Please repeat your email address" placeholder="John@mail.com" autocomplete="email" required="">
+            </div>
+            <div>   
+                <label class="vissualy-hidden" for="password">password</label>
+                <input type="password" id="password" name="password" title="Please enter a password.The password  must have 12 characters, must take one number a one simbol" size="12" minlength="6" maxlength="12" required="" placeholder="Enter password">
+            </div>
+            <div> 
+                <fieldset>
+                    <legend> Birthday <span>?</span></legend>
+                    
+                <select name="month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4" selected="">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select name="day">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15" selected="">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">21</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select name="year">
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022" selected="">2022</option>
+                </select>
+                </fieldset> 
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Gender <span>?</span></legend>
+                    <label> Female
+                        <input type="radio" name="gender">
+                    </label>
+                    <label> Male
+                        <input type="radio" name="gender">
+                    </label>
+                    <label> Custom
+                        <input type="radio" name="gender">
+                    </label>
+                </fieldset>
+               
+            </div>
+            <div>
+                
+                    <p>
+                        By clicking Sign up, you agree to our Terms, Data Policy and Cookies Policy. 
+                        You can receive SMS Notisfaction from us  and  can opt out any time.
+                    </p>
+                    <input id="sms" type="hidden" name="q">
+                
+              
+            </div>
+            
+            
+               <input class="btn" type="submit" value="Sign Up">
+            
+        </form>
+    </section>   
+ </main>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

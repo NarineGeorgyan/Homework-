@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,span{
+    margin-left: 15px;
+
+}
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+.vissualy-hidden{
+    display: none;
+}
+div>input{
+    margin-bottom: 25px;
+    min-height: 30px;
+    padding-inline-start: 7px;
+    margin-left: 15px;
+    font-size: 14px;
+    background-color:rgb(227, 227, 223)
+
+ 
+}
+
+input[type="email"],input[type="password"]{
+    width: 100%;
+}
+.name {
+    margin-top: 15px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+   
+    
+}
+.name >input{
+    width: 50%;
+    margin-left: 0;
+}
+
+fieldset span{
+  background-color: grey; 
+  padding:0px 5px;
+  border-radius: 100%;
+  color: #ffff;
+  margin-left: 0;
+}
+fieldset{
+    width: 100%;
+    display: flex;
+    margin-left: 15px;
+    border: none;
+    margin-bottom: 10px;
+    justify-content: space-between
+}
+fieldset label, fieldset select{
+    border: 1px solid black;
+    padding: 5px 15px;
+
+}
+input, label,select{
+    border-radius: 5px  ;
+}
+
+.btn{
+    min-height: 25px;
+    width: 200px;
+    margin: 15px auto;
+    background-color: rgb(52, 218, 52);
+    color: #ffff;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 7px 14px;
+    
+}
+.btn:focus, .btn:hover{
+    background-color: aqua;
+    color: black;
+}
+p{
+    margin-left:15px;
+    width: 100%;
+    text-align:justify;
+}
+.link{
+    text-decoration: none;
+}
