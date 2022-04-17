@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 form{
-    width: 50%;
+    width: 30%;
     margin: 0 auto;
     padding: 20px;
     display: flex;
@@ -38,13 +38,14 @@ input[type="email"],input[type="password"]{
     width:100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
  
    
     
 }
 .name >input{
-    width: 50%;
-    margin-left: 0;
+    width: 49%;
+
 }
 
 fieldset span{
@@ -61,23 +62,30 @@ fieldset{
     margin-bottom: 10px;
     justify-content: space-between
 }
+select{
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 fieldset label, fieldset select{
     border: 1px solid black;
     padding: 5px 15px;
 
 }
+
 input, label,select{
     border-radius: 5px  ;
 }
 
 .btn{
-    min-height: 25px;
+    min-height: 15px;
     width: 200px;
     margin: 15px auto;
     background-color: rgb(52, 218, 52);
     color: #ffff;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     padding: 7px 14px;
     
 }
