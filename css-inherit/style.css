@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fffffd;
+    color: #111111;
+    font-size: 18px;
+    min-height: 100vh;
+
+}
+
+header, main section{
+    width: 70%;
+    color: hsl(40, 2%, 32%);
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    margin: 10px auto;
+
+       
+}
+
+h1{
+    display:none ;
+}
+.container{
+    width: 100%;
+    background-color:hwb(240 0% 0%);
+    background-image: url(./image/png-transparent-html5-video-mobile-app-development-web-application-development-web-design-template-web-design-text.png);
+}
+.container nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 700px;
+                             ;
+    
+ }
+
+.menu-box tr{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    padding: 12px;
+    
+}
+
+.menu-box, td{
+    border-collapse: collapse;
+    color: rgb(255,120, 50); 
+    margin-left: 5rem;
+   
+   
+}
+
+td{
+    
+    color: rgba(3, 69, 47, 0.8);
+    padding: 1em;
+    font-size: 2em;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-color:hsl(32, 55%, 64%);
+                             
+}
+td a{
+    font-size: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+td:hover{
+  background-color: bisque;
+  color: chocolate;
+
+}
+
+p{
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.meta{
+margin-left: 50px;
+background-color:rgba(201, 201, 201, 0.657);
+min-height:50px;
+}
+
+.meta code{
+    padding: 15px;
+}
+
+h4{
+    margin-left: 33px;
+    color: red;
+}
+#button{
+    display: block;
+    width: 300px;
+    min-height: 50px;
+    background-color: rgba(129, 129, 178, 0.2);
+    font-size: 25px;
+    text-align: center;
+    font-family: inherit;
+    margin:40px auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: rgb(7, 7, 6);
+    border-radius: 7px;
+
+}
+
+/* a tag does not inherit as there are uninherit elements*/
+

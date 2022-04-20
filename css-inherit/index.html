@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href="./style.css"/>
+    <style>
+         h3{
+            color:rgb(212,102,156);
+            font-size: 4rem;
+            text-align: center;
+            text-transform: capitalize;
+        
+          
+        }
+
+       p {
+           font-weight: 500;
+           margin-left: 33px;
+        } 
+        ul li, ol li{
+            color: rgb(104, 65, 14);
+            font-size: 1.5rem;
+            padding: 5px 10px;
+            margin-left: 70px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tags in HTML 5</h1>
+        <div class="container">
+            <div class ="main-logo">
+               
+            </div>
+            <nav>
+                <table class ="menu-box">
+                    <tr>
+                        <td><a href="#head">Head tags</a></td>
+                        <td><a href="#meta">meta tags</a></td>
+                        <td><a href="#audio">audio tags</a></td>
+                        <td><a href="#">list tags</a></td>
+                    </tr>
+                    
+                </table>
+            </nav>
+        </div>
+    
+    </header>
+    <main>
+        <section id="head">
+            <h3 > Head tags</h3>
+            <p>The heading is a title at the head of a page or section of a book. It is very important to have different types of headings to structure the content of the web page. Headings help search engines to understand and index the structure of the web pag</p>
+            <p>There are 6 levels of headings in HTML:<code>h1, h2, h3, h4, h5, h6</code> .</p>
+            <h4>Importance of Heading</h4>
+            <ol>
+                <li>HTML headings highlight important topics and the document structure, thus improving user engagement. </li>
+                <li><span style="font-style: italic; color: brown;">Use only one <code>&#60;h1&#62; &#60;&#47;h1&#62;</code> tag on any web page. The tag must describe what your page is about and also contain a keyword to improve rankings in Google.</span></li>
+                <li>Search Engines use headings for indexing the structure and content of the webpage.</li>
+            </ol>   
+        </section>
+        <section id ="meta">
+            <h3>meta tags</h3>
+                 
+            <p>Recently, Danny Sullivan <span>brought up good questions</span>  about how search engines handle meta tags. Here are some answers about how we handle these tags at Google.</p>
+            
+            <h4>If you use both a robots.txt file and robots meta tags </h4> 
+            <p>If the robots.txt and meta tag instructions for a page conflict, Googlebot follows the most restrictive. More specifically:
+            </p>
+            <ul style="color: rgb(90, 90, 170);font-size:22px;">        
+                <li>
+                    If you block a page with robots.txt, Googlebot will never crawl the page and will never read any meta tags on the page.
+                </li>
+                <li>
+                    If you allow a page with robots.txt but block it from being indexed using a meta tag, Googlebot will access the page, read the meta tag, and subsequently not index it.
+                </li>
+            </ul>
+        
+        
+            <h4>Valid meta robots content values</h4>
+            <!-- inline way  -->
+            <p style="font-weight: 900"> Googlebot interprets the following robots meta tag values:</p>
+            <ul>
+                <li>noindex - prevents the page from being included in the index.</li>
+                <li> nofollow - prevents Googlebot from following any links on the page. (Note that this is different from the link-level nofollow attribute, which prevents Googlebot from following an individual link.)</li>
+                <li> noarchive - prevents a cached copy of this page from being available in the search results.</li>
+                <li>nosnippet - prevents a description from appearing below the page in the search results, as well as prevents caching of the page.</li>
+                <li>   none - equivalent to noindex, nofollow.</li>
+            </ul>
+        
+            <h4 style="font-size: 26px;font-style: italic;color: rgb(74, 74, 200); margin-left: 26px;">A word about content value none</h4>
+            <p>As defined by <a href="#">robotstxt.org,</a> the following direction means noindex, nofollow.</p>
+            <div class="meta">
+                <code class="meta-tag">
+                    &#60;meta name="robots" content="none" &#47;&#62;
+                </code>
+            </div>   
+           
+            <p>However, some webmasters use this tag to indicate no robots restrictions and inadvertently block all search engines from their content.</p>
+        </section>
+        <section id="audio">
+            <h3> Definition and Usage </h3>
+            <p>
+                                
+                The video tag is used to embed video content in a document, such as a movie clip or other video streams.
+
+                 The video tag contains one or more source tags with different video sources. The browser will choose the first source it supports.
+                    
+                The text between the video and /video tags will only be displayed in browsers that do not support the video element.
+                    
+                There are three supported video formats in HTML: MP4, WebM, and OGG.
+            </p>
+
+            <a id = "button" href="../audio/index.html" target="_blank"> play</a>
+        </section>
+    </main>
+</body>
+</html>
