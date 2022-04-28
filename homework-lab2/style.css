@@ -1,0 +1,129 @@
+/* ol{
+  list-style-type: none;
+   counter-reset: item; 
+}
+
+ol li::before{
+    counter-increment: item;
+    content:  counter(item) " ";
+}   
+.nested{
+    counter-reset: nested-item;
+}
+.nested li::before{
+    counter-increment:nested-item;
+    content: counter(item) "." counter(nested-item)     " ";
+} */
+@font-face {
+    font-family: 'Linux Libertine';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Linux Libertine'), url('LinLibertine_Re-4.1_.8_.woff') format('woff');
+    }
+    
+body{
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #202122;;
+}
+h1{
+    font-family: 'Linux Libertine';
+    font-size: 28.8px;
+    border-bottom: 1px solid #a2a9b1;
+}
+.vissualy-hidden{
+    display: none;
+}
+.bold{
+    font-weight: 700;
+}
+.text-italic{
+    font-style: italic;
+}
+.text-color-red{
+    color: red;
+}
+.link-color{
+    color:#0645ad;
+
+    text-decoration: none;
+}
+.link-color:link{
+    color:blue;
+}
+.link-color:hover{
+    text-decoration: underline;
+}
+.text-center{
+    text-align: center;
+}
+
+.infobox, td, tr, th{
+    background: #f8f9fa;
+    border-collapse: collapse;
+   
+}
+thead,tbody,tfoot{
+    padding: 7px 10px;
+}
+table tr th.head-title{
+    background-color: #cfe3ff;
+    font-size: 22px;
+}
+table.infobox tr td{
+    vertical-align: baseline;
+}
+table.infobox tr td span{
+    padding: 7px 17px;
+    color: #0645ad; 
+    font-size: 12.6px;
+    font-family: sans-serif;
+}
+tfoot td{
+   
+    background-color:#dcebff;
+}
+tfoot td::before{
+    content: url("//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/15px-Commons-logo.svg.png");
+    padding: 5px;
+}
+.info-content{
+    border: 1px solid #a2a9b1;
+    background-color: #f8f9fa;
+    width: 500px;
+    
+}
+.info-content .text-center{
+    font-size: 13.3px;
+    font-family: sans-serif;
+}
+
+ol{
+    list-style-type: none;
+    counter-reset: item;
+    color:#0645ad;
+    
+}
+ol li::before{
+   
+    counter-increment:item;
+    content:counters(item, ".") " ";
+    color: black;
+    padding: 1px;
+}
+.infobox {
+    border: 1px solid #a2a9b1;
+    width: 100px;
+    counter-reset: note;
+}
+.sup-text::before{
+    counter-increment: note                                 ;
+    content: "[" counter(note) "]";
+}
+.history h2,.etymology h2{
+    border-bottom: 1px solid #a2a9b1;
+}
+.text-rigth{
+    width: 400px;
+}

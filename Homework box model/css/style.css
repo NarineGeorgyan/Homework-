@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 24px;
+}
+body header{
+    width: 100%;
+    background-color: blue;
+    padding: 10px 30px;
+}
+
+ul{
+    list-style-type: none;
+ 
+}
+.text-color{
+    color:#ffffff
+}
+.text-weight{
+    font-weight: 700;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+/* hanel vergum */
+ /* ul a{
+    display: none;
+}   */
+body header nav.main-navigation{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.visually-hidden{
+    display: none;
+}
+.score-settings-navigation li{
+    padding: 2px 10px 3px 0;
+    margin-right: 20px;
+}
+header{
+    margin-bottom: 30px;
+}
+.game-container{
+    width: 70%;
+    margin: 30px auto;
+    padding: 10px 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.title{
+    margin-bottom: 30px;
+}
+/* .guide-navigation-list-item::before{
+    content:url('/image/77-775759_ask-ask-icon-png-transparent-png.png'); 
+    width: 10px;
+    color: black;
+} */
+.board-container{
+    width: 33%;
+    min-width: 350px;
+    margin-bottom: 60px;
+}
+.board-container,.keyboard-container{
+    padding: 10px 13px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ 
+   
+}
+
+.board-container .border-cell{
+    min-height: 50px;
+    min-width: 50px;   
+    padding: 3px 7px;
+    margin: 0 0 3px 7px;
+    border: 2px solid transparent;
+    background: #ffffff;
+    border-radius: 7px;
+    text-align: center;
+    line-height: 45px;
+    text-transform:uppercase;
+    color: black;
+
+}
+.keyboard-container {
+    width: 100%;
+ 
+}
+.row{
+    padding: 5px 15px;
+    display: flex;
+   
+}
+.btn-key{
+    min-width: 30px;
+    min-height: 30px;   
+    margin: 3px;
+    padding: 7px 12px;
+    border-radius: 7px;
+    background: rgb(195, 192, 192);
+    font-size: 18px;
+    font-family: inherit;
+ 
+  
+}
+/* guide style */
+.guide{
+    color: #ffffff;
+    font:24px Verdana, Geneva, Tahoma, sans-serif;
+ 
+}
+.explanation, .example{
+    border-bottom: 5px double rgb(101, 99, 99);
+}
+.explanation p, .example p, .example h4{
+    padding: 5px 12px;
+    margin-bottom: 15px;
+}
+.guide .board-container .border-cell.first-el{
+    background-color: rgb(3, 75, 3);
+}
+.guide .board-container .border-cell.second-el{
+    background-color: rgb(207, 207, 45)
+}
+.guide .board-container .border-cell.forth-el{
+    background-color: rgb(91, 91, 89)
+}
+.guide .title{
+    text-align: center;
+}
+.guide a{
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px 10px 15px;
+    text-decoration: none; 
+    text-align: center;
+}
+.guide a:hover{
+    background: #ffffff ;
+    color: black;
+    border-radius: 10px/15px;
+}
