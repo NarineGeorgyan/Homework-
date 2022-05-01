@@ -1,0 +1,37 @@
+div.container{
+    background-color: rgb(231, 181, 55);
+    width: 1000px;
+    height: 400px;
+    padding:200px 10px 0;
+    text-align: center;
+    position: relative;    
+}
+div.container > div{
+    width: 300px;
+    height: 150px;
+    background-color:rgb(221, 119, 153);
+    border: 10px solid #fff;
+    margin-left: 15px;
+    line-height:150px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+  
+}
+.child2:nth-child(2){
+    border: 10px solid rgb(80, 4, 80);
+    position: absolute;
+    top: 120px;
+    left: 250px 
+    
+
+    
+}
+.child3{
+    position: absolute;
+    top: 200px;
+    left:670px
+
+    
+}

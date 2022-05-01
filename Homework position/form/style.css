@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgba(28, 31, 66,0.7);
+    background-color:rgba(237, 232, 232, 0.874);
+    max-width: 700px;
+    margin: 50px auto;
+}
+fieldset{
+    width: 700px;
+    border: none;
+    margin-left: 10px;
+}
+fieldset p{
+    font-size: 14px;
+    color: rgba(69, 69, 74, 0.2);
+}
+fieldset legend{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+label{
+    text-transform: capitalize;
+}
+.table{
+    display: table;
+    }
+.table label{
+    display: table-cell;
+}
+.table-label{
+    padding-right: 20px;
+}
+label span{
+    display: block;
+    padding: 7px 0;
+    width: 200px;
+   
+}
+label input{
+    padding: 10px 5px;
+    border-color: rgba(137, 138, 148, 0.3);
+    border-radius: 7px;
+    width: 320px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+    color: inherit
+  
+
+  } 
+label input:hover, textarea:hover, button:hover{
+    background-color: rgb(180, 172, 241); 
+ 
+} 
+label input:focus, textarea:focus, button:focus{
+    background-color: rgb(49, 47, 65); 
+    color: #ffffff;
+    outline: none;
+}
+label input[type="email"]{      
+    display: block;
+    width: 660px;
+   
+}
+textarea{
+    resize: vertical;
+    margin-bottom: 30px;
+    padding: 10px 5px;
+    width: 660px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+    min-height: 100px;
+}
+
+button{
+    width: 150px;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(26, 98, 98);
+
+}   

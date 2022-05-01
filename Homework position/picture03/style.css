@@ -1,0 +1,36 @@
+div.container{
+   width: 600px;
+   position: relative;  
+   text-align: center;
+   font-size: 30px;  
+}
+
+.child1{
+    width: 500px;
+    height: 450px;
+    background-color: rgb(226, 219, 224);
+    border: 2px solid black;
+    padding-top: 30px;
+ }   
+.child2{
+    width: 400px;
+    height: 250px;
+    background-color: rgb(33, 159, 17);
+    border: 2px solid black;
+    padding-top: 30px;
+    position: absolute;
+    top:100px;
+    left:50px;
+}
+.child3{
+    width: 300px;
+    height: 100px;
+    border: 2px solid black;
+    background-color: rgb(228, 218, 26);
+    position: absolute;
+    top:115px;
+    left:47px;
+    line-height:100px;
+    text-align: center;
+    font-weight: bold;
+}
