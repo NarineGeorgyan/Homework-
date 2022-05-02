@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgb(24, 19, 19);
+}
+.main-container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+header{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(225, 228, 228);
+    min-height: 100px;
+    position: sticky;
+    top: 0px;
+}
+section div.logo-container{
+   display: inline-block; 
+
+}
+.logo-container a{
+    cursor: pointer;
+}
+section nav.menu-navigation{
+    display: inline-block;
+    width: 500px;
+    margin-left: 500px;
+    /*chi ashxatum  xndtum em anel
+     width: calc(100%-45px);*/
+
+}
+section nav.menu-navigation ul{
+    list-style-type: none;
+ }   
+section nav.menu-navigation ul li{
+    display: inline-block;
+    height: 100px;
+    margin-left:7px;
+ 
+}
+li a{
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(24, 19, 19);
+    font-family: inherit;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-decoration: none;
+    padding: 10px 30px;
+   
+   
+}
+section nav.menu-navigation ul li a:hover{
+    color: rgb(81, 81, 124);
+}
+.main-part1,.main-part2,.main-part3{
+    width: 100%;
+    min-height: 450px;
+}
+.main-part1{
+    background-image: url("https://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+.main-part1 .title{
+    padding: 50px 20px;
+    font-size: 50px;
+    color: rgba(236, 18, 18, 0.467);
+} 
+.main-part2, .main-part3{
+    display: table;
+}
+.main-part2 .wrapper,.main-part3 .wrapper {
+    display: table-cell;  
+   
+}
+.main-part2 .wrapper-img, .main-part3 .wrapper-img{
+    min-height: 350px;
+    min-width: 380px;
+    background-image: url("https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+  
+}
+.wrapper-text{
+    vertical-align: top;
+    text-align: justify;
+    margin-left: 20px;
+    padding: 0 15px;
+}
+.wrapper-text h2{
+    font-size: 25px;
+    color: blueviolet;
+}
+
+  
