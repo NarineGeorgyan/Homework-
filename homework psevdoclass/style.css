@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(215, 215, 225);
+}
+section h2:first-child{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 5px 0;
+    padding: 10px 7px;
+    border-bottom:2px solid black ;
+    color: rgb(125, 43, 218);
+    text-transform: capitalize;
+ 
+}
+/* create table */
+table{
+   width: 300px;
+   border: none;
+   border-collapse: collapse;
+   box-shadow: 0 2px 3px 1px rgb(143, 136, 136),2px 4px 2px 1px rgba(78, 212, 78,0.3);
+   text-align: justify;
+ 
+}
+tr:nth-child(2n){
+    background: rgb(127, 126, 126);
+ 
+}
+tr:nth-child(2n+1){
+    background: rgb(211, 203, 203);
+}
+table th:nth-child(n){
+    background: rgb(40, 69, 11);
+}
+td:nth-of-type(n+1):hover{
+   background: rgb(4, 38, 4);
+   cursor:pointer;
+}
+tr:nth-child(n+1):hover{
+    background: rgb(164, 233, 164);
+    cursor:pointer;
+}
+th:nth-of-type(n+1){
+    text-shadow: 0px -4px 8px rgb(252, 231, 91);
+}
+/* end table style */
+/* create list */
+ ul{
+     list-style-type: none;
+     counter-reset: item;
+ }
+ li:before{
+     counter-increment: item;
+     content: "Chapter " counters(item, ".") " ";
+     
+ }
+ ul:nth-child(2){
+     background: #ff0000;
+ }
+ ul ul:last-child{
+     background: rgb(241, 241, 14);
+ }
+ul ul ul:last-child{
+    background: blue;
+}
+li:nth-of-type(n+1){
+    border: 2px solid black;
+    box-shadow: 2px 5px rgb(104, 101, 101);
+}
+
+li:hover{
+    background: green;
+}
+/* list end */
+/* form start */
+form{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgba(28, 31, 66,0.7);
+    background-color:rgba(237, 232, 232, 0.874);
+    max-width: 800px;
+    margin: 50px auto;
+}
+fieldset{
+    width: 700px;
+    margin: 0 auto;
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+}
+fieldset p{
+    font-size: 14px;
+    color: rgba(69, 69, 74, 0.2);
+}
+fieldset legend{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+label{
+    text-transform: capitalize;
+}
+
+label span{
+    display:inline-block;
+    padding: 7px 0;
+    width: 200px;  
+}
+label input{    
+    padding: 10px 5px;
+    border-color: rgba(137, 138, 148, 0.3);
+    border-radius: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: inherit;
+    line-height: revert;
+} 
+input[type="text"]:nth-of-type(n+1), input[type="email"]{
+    width: 100%;
+}
+.fullname{
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.fullname>label:last-child{
+       margin-left: 20px;
+}
+.date-info{
+    margin: 20px 0;
+}
+input[type="date"]{
+width: 300px;
+padding: 10px 20px;
+border: none;
+background: rgb(204, 196, 196);
+font-family: inherit;
+color:#ffffff;
+text-align: center;
+font-size: 18px;
+font-weight: bold;
+border-radius: inherit;
+outline: none;
+}
+label input:hover, textarea:hover, button:hover, label+input[type="checkbox"]:hover, label+input[type="radio"]:hover{
+    background-color: rgb(180, 172, 241); 
+} 
+.gender-info,.profession-info, .score-info{
+    width: inherit;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    border: 2px solid black;
+    background: rgb(204, 196, 196);
+    display: flex;
+    flex-direction: column;
+
+}
+.profession-info>label,.gender-info>label,.score-info>label {
+    background-color: rgb(228, 238, 238);
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 30px;
+   
+}
+ input[type="checkbox"]:checked{
+     appearance: none;
+     width: 20px;
+     height: 20px;
+     background-color: black;
+     color: #ffffff;
+   
+}
+label+input[type="checkbox"],input[type="checkbox"],label+input[type="radio"],input[type="radio"] {
+    cursor:pointer;
+}
+textarea{
+    resize: vertical;
+    margin-bottom: 30px;
+    padding: 10px 5px;
+    width: 660px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    outline: none;
+    min-height: 100px;
+}
+
+button{
+    width: 150px;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: rgb(26, 98, 98);
+
+}   

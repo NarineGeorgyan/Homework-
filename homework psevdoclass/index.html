@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <section>
+        <h2> itareable table</h2>
+        <table>
+        <tr>
+          <th>Country</th>
+          <th>Capital</th>
+          <th>Language</th>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td>New Delhi</td>
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>Paris</td>
+          <td>French</td>
+        </tr>
+        <tr>
+          <td>New Zealand</td>
+          <td>Wellington</td>
+          <td>English</td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>Paris</td>
+            <td>French</td>
+          </tr>
+          <tr>
+            <td>New Zealand</td>
+            <td>Wellington</td>
+            <td>English</td>
+          </tr>
+    </table>
+</section>
+<section>
+    <h2>Create subject matter</h2>
+    <ul>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <li> </li>
+        <ul>
+            <li> </li>
+            <li></li>
+            <li> </li>
+                <ul>
+                    <li> </li>
+                    <li></li>
+                    <li></li>
+                 
+               </ul>
+               <!-- nael <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li> -->
+         </ul>
+     </ul>
+</section> 
+<section>
+  <h2> Insert own information</h2>
+  <form>
+    <fieldset>
+        <legend> Contact us</legend>
+        <p>We'd love to hear from you, please drop us a line if you've any query </p>
+       <div class="fullname">
+            <label>
+                <span>first name:</span>
+                <input type="text" name="first-name">
+            </label>
+            <label>
+                <span>last name:</span>
+                <input type="text" name="last-name">
+            </label>
+       </div>
+        <label>
+            <span>email address:</span>
+            <input type="email" name="email">
+        </label>
+        <div class="date-info">
+          <label class="date-label">  
+          <input type="date" name="birthday-date"  value="yyyy-mm-dd"
+          min="1976-01-01" max="2022-12-31" />
+        </label> 
+         </div>
+        <div class="gender-info">
+          <h3>Gender</h3>
+          <label>Male:
+            <input type="radio" name="gender"/>
+          </label>
+          <label> Female:
+            <input type="radio" name="gender"/>
+          </label>
+        </div>
+        <div class="profession-info">
+          <h3>Choose profession</h3>
+          <label>
+            Painter
+            <input type="checkbox" name="Pointer" value="Pointer"/>
+          </label>
+          <label>
+            artist
+            <input type="checkbox" name="artist" value="artist"/>
+          </label>
+          <label>
+            engineer
+            <input type="checkbox" name="engineer" value="engineer"/>
+          </label>
+          <label>
+            programmer
+            <input type="checkbox" name="programmer" value="programmer"/> 
+          </label>
+        </div>
+        <div class="score-info">
+          <h3>Knowledge score</h3>
+          <label>score:
+            <input type="range" name="score" max=100, min =0/>
+          </label>
+        </div>
+       
+           <span>message</span>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </label>
+        <button> Submit </button>
+    </div>
+ </form>
+</section> 
+</body>
+</html>
