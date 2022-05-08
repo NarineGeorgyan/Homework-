@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+.container>div{
+width: 120px;
+height: 100px;
+text-align:center ;
+text-transform: capitalize;
+color: #fff;
+line-height: 100px;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight:bold;
+
+
+position: relative;
+
+}
+.red{
+    background-color: rgba(243, 15, 15, 0.974);
+   
+}
+.green{
+    background-color: rgba(64, 243, 15, 0.843);
+    position: absolute;
+    left:50px;
+    top:-40px
+}
+.blue{
+    background-color: rgba(102, 15, 243, 0.843);
+    position: absolute;
+    left:100px;
+    top:-80px
+}
+.rose{
+    background-color: rgba(222, 52, 117, 0.833);
+    position: absolute;
+    left:150px;
+    top:-120px
+}
+.brown{
+    background-color: rgb(209, 62, 62);
+    position: absolute;
+    left:200px;
+    top:-160px
+}
+.pink{
+    background-color: rgba(243, 15, 133);
+    position: absolute;
+    left:250px;
+    top:-200px;
+    z-index:1
+}
+.yellow{
+    background-color: rgb(235, 243, 15);
+    position: absolute;
+    left:300px;
+    top:-240px;
+}

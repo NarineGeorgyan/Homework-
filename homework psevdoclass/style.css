@@ -172,7 +172,7 @@ label input:hover, textarea:hover, button:hover, label+input[type="checkbox"]:ho
      color: #ffffff;
    
 }
-label+input[type="checkbox"],input[type="checkbox"],label+input[type="radio"],input[type="radio"] {
+label + input[type="checkbox"],input[type="checkbox"],label + input[type="radio"],input[type="radio"] {
     cursor:pointer;
 }
 textarea{
@@ -196,5 +196,4 @@ button{
     font-weight: 600;
     color: #ffffff;
     background-color: rgb(26, 98, 98);
-
 }   
