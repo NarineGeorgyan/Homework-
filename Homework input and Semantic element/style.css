@@ -345,3 +345,37 @@ address a{
     width: 80px;
     min-height: 150px;
 }
+/* media for untill 576 screen */
+
+@media screen and (min-width:576){
+   body{
+       background-color:red ;
+   }
+
+}
+@media screen and (min-width:577) and (min-width:768){
+    body{
+        background-color:rgb(60, 0, 255) ;
+    }
+ 
+ }
+
+ @media screen and (min-width:769) and (min-width:992){
+    body{
+        background-color:rgb(208, 255, 0) ;
+    }
+ 
+ }
+ 
+ @media screen and (min-width:993) and (min-width:1200){
+    body{
+        background-color:rgb(255, 0, 238) ;
+    }
+ 
+ }
+ @media screen and (min-width:1201) and (min-width:1500){
+    body{
+        background-color:rgb(12, 12, 12) ;
+    }
+ 
+ }
