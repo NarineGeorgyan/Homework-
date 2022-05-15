@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap');
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+.vissually-hidden{
+    display: none;
+}
+header, section{
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+.image-cover{
+
+    background-image: url(https://www.freshdirect.com/media/images/fdx/tall/t_769x284_gfd_aapi_heritage_month.jpg);
+    background-repeat: no-repeat;
+    background-position:top left;
+    background-size: cover;
+    background-position:bottom left;
+    height:500px;
+    
+    object-fit:contain; 
+
+}
+
+section{
+     background-color: #fef4e6;
+     position: relative;
+     
+}
+.container{
+    width: 90%;
+    padding: 10px 25px;
+    background-color:#fbfbfb;   
+    /* please check I am not sure that I can use such property to resolve this problem*/
+    position: absolute;
+    top: -70px;
+    left: 5%  ;
+    
+}
+.container h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+}
+.container>p {
+    margin-bottom: 20px;
+
+}
+.goods-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    
+
+}
+.cards{
+
+    margin: 0 0 50px 10px;
+    padding: 7px 2px;
+    cursor: pointer;
+    /* transform: scale(1); */
+    /* transition: transform 2s; */
+ 
+    
+}
+.cards img{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.cards .cards-info{
+      margin-bottom: 10px;
+}
+.cards-info h3{
+    color: gold;
+}
+.cards-info p{
+    width: 300px;
+    font-size: 16px;
+    text-align: justify;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    transition:text-overflow 2s ease-in-out;
+
+ }
+ .cards-info p:hover{
+    white-space: initial;
+    overflow: initial;
+    text-overflow: initial;
+ }
+
+ .price-info span{
+     display: inline-block;
+     font-weight: bold;
+     padding: 10px 17px;
+ }
+ .price-info span::before{
+     content: "$";
+     font-size: inherit;
+
+ }
+.price-btn{
+    width: 250px;
+    padding: 7px 15px;
+    border: 2px solid rgb(117, 233, 117);
+    border-radius: 8px;
+    margin-bottom: auto;
+    background-image: linear-gradient(120deg,rgb(27, 195, 27), rgb(227, 227, 33));
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+   
+}
+.price-btn:hover{
+    animation-name: clickButton;
+    animation-duration: 3s;
+}
+
+@keyframes clickButton{
+    0%{
+    
+        box-shadow: 0 0 2px rgb(10, 27, 13), 0 0 6px 2px rgb(65, 155, 82);;
+    }
+    50%{
+        
+        box-shadow: 0 2px 4px rgb(10, 27, 13), 0 4px 10px 4px rgb(21, 86, 33);;
+    }
+}
+.cards:hover{
+    /* transform:  scale(1.2); */
+    box-shadow: 0 0 8px 2px rgb(148, 144, 144), 0 0 12px 4px rgb(184, 173, 173);
+    border: 3px inset rgb(225, 224, 224);
+    transition: transform 1s;
+}
+.cards:hover .price-btn{
+    opacity: 2;
+    margin-bottom: 20px;
+}
+@media screen and (max-width:768px) {
+    .container>p{
+        width: max(50% 768px);
+        word-wrap: break-word;
+    }
+    
+    
+}
+@media screen and (max-width:576) {
+    .container>p{
+        width: max(50% 576px);
+        word-wrap: break-word;
+    }
+    
+    
+}

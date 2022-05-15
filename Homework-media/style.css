@@ -79,7 +79,7 @@ h1{
         text-transform: uppercase;
     }
     p{  width: min(90%, 1200px);
-        font-size: max(5vh,18px);
+        font-size: 28px;
         padding: 10px 15px;
         color: beige;
       
@@ -92,6 +92,11 @@ h1{
         margin: 12px 15px;
              
     }
-
+    p{  width: 100%;
+        font-size: 35px;
+        padding: 10px 15px;
+        color: beige;
+      
+    }
     
 }

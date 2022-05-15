@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .arabic{
+            padding-inline-start: 20px;
+            border-inline-start: 2px solid red;
+            margin-inline-start: 25px;
+            margin-block-start:50px
+        }
+        .japan{
+            writing-mode: vertical-rl;
+            margin-block-end:150px ;
+          
+            padding-inline-start: 20px;
+            inline-size: 500px;
+            border-inline-start: 10px dashed blueviolet   
+           
+        }
+        .japan h2{
+            margin-block: 10px 30px;
+        }
+        .japan p{
+            border-inline-start: 5px solid green;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li>a{    
+            text-decoration: none;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+        li:first-child{
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            background-color: black;
+            inline-size: 100px;
+            
+        }
+        li:last-child{
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            background-color: black; 
+            inline-size: 150px;
+                
+        }
+        li:nth-child(2){
+          
+            text-orientation: upright;
+            background-color: black; 
+            inline-size: 50px;
+            text-align: center;
+            width: 100px;
+                
+        }
+
+     ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .image1{
+            filter: blur(5px);
+        }
+        .image2{
+            filter:grayscale(80%)
+        }
+        .image3{
+            filter: drop-shadow(10px 20px 15px rgb(14, 6, 21));
+        }
+
+    </style>
+</head>
+<body>
+    <p class="arabic" lang="ar" dir ="rtl">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellat fuga aliquid quae recusandae dicta fugiat iste sit et cum animi, exercitationem dolor deleniti. Modi repudiandae corporis quo quis cum.
+        In nemo nihil doloribus ea porro, temporibus culpa sed sit sapiente iste quo distinctio beatae saepe. Est iusto perspiciatis, debitis alias eveniet tempore. Quod dignissimos tenetur adipisci tempora voluptas facilis.
+        Officia repellendus perferendis aperiam et, qui iste id repudiandae. Quaerat laudantium consequatur officiis rem quod adipisci nam. Dolor suscipit deleniti dolore sequi id, repellendus assumenda harum minus, veniam, error iste!
+        Nobis sed ea velit, ullam quia aut voluptatem blanditiis dolor natus aliquid eius est vitae nesciunt a tempora similique explicabo? Quia dicta, nostrum provident rem quisquam temporibus praesentium quis commodi?
+        Inventore praesentium ad culpa numquam et incidunt, eius fugiat eligendi ducimus aspernatur in tempora eos sapiente reprehenderit temporibus explicabo vel, omnis enim id ipsum quibusdam facere pariatur sint. Eveniet, ratione.
+    </p>
+    <div class="japan">
+        <h2 > 與促音呈現在日語特有的假名</h2>
+        <p lang="ja" dir ="rtl">
+            7至8世紀，貴族在詩歌與文章裏使用漢字以符合他們的美學。漸漸地一些用來對應每個日語音節的標準文字因此成形。萬葉假名被用來標註許多艱深的漢字。
+
+            這使得假名的教育利用此方法來解釋漢字。這些被高度簡化過的音節文字記號沒有獨立的意義，但表現出讀音與音律組合。日語的音節以時間單位摩拉（モーラ）作為分隔，展現在書寫上，而事實上是被母音的音節所區隔，或是子音跟隨著一個長母音或雙元音，而最後一個音節 n 與促音呈現在日語特有的假名上。
+        </p>
+    </div>
+   <div>
+    <ul>
+        <li>
+            <a href="#" class="link">Mac</a>
+        </li>
+        <li>
+          <a href="#" class="link">iPad</a>
+      </li>
+      <li>
+          <a href="#" class="link">iMac</a>
+      </li>
+    </ul>
+   </div>
+   <div>
+       <ul>
+           <li>
+            <img class="image1" src="https://static.remove.bg/remove-bg-web/f8fbcafbd1f3872923a7108604df9ddb62a43564/assets/start-1abfb4fe2980eabfbbaaa4365a0692539f7cd2725f324f904565a9a744f8e214.jpg" alt="image-girl" width="300px"
+            height="200px">
+           </li>
+           <li>
+            <img class="image2"src="https://d5nunyagcicgy.cloudfront.net/external_assets/hero_examples/hair_beach_v391182663/original.jpeg" alt="image-girl" width="300px">
+           </li>
+           <li>
+            <img class="image3" src="https://www.slazzer.com/static/images/home-page/banner-orignal-image.jpg" alt="image-girl" width="300px" height="200px">
+           </li>
+       </ul>
+    
+     
+      
+   </div>
+</body>
+</html>
