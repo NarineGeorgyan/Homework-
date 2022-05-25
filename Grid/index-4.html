@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    body{
+        box-sizing: border-box;
+    }
+    .container{
+        display: grid;
+        grid-template-columns:100%;
+        grid-row-gap:12px
+  
+    }
+    .box{
+       grid-column: 1/2;
+        background-color: rgb(175, 129, 13)
+    }
+    .col-2{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows:100px;
+    
+        grid-column-gap:12px;
+     
+    
+    }
+    .col-2>div{
+        background-color: blue;
+    }
+    .col-3{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:100px; 
+        grid-column-gap:12px;
+    }
+    .col-3>div{
+        background-color: blueviolet;
+    }
+    .col-4{
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:100px; 
+    
+        grid-column-gap:12px;
+    }
+    .col-4>div{
+        background-color: rgb(225, 87, 7);
+    }
+
+
+</style>
+<body>
+    
+    <div class="container">
+        <div class="box">1</div>
+        <div class="col-2">
+            <div>2</div>
+            <div>3</div>
+        </div>
+        <div class="col-3">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+        <div class="col-4">
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+    </div>
+</body>
+</html>
