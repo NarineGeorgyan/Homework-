@@ -3,8 +3,11 @@ main{
    .container{
        @include container;
        justify-content: center;
+     
 
     article{
+        position: relative;
+        top: 0;
         @include blockSize(100px, auto);
         @include padd(5px,0);
             ul{ 
@@ -13,6 +16,8 @@ main{
                 align-items:flex-end;
                 list-style-type: none;
                     li{ 
+                        position: sticky;
+                        top: 0;
                        @include flex(column);
                        @include blockSize(70px,70px);
                     &:nth-child(1) a{
