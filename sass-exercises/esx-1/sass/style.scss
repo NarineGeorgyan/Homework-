@@ -1,0 +1,35 @@
+$bgHeaderColor:rgb(196, 191, 191);
+$color:#fff;
+// $fa-font-path: "../icon/webfonts";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* neal canaknum ei icon avelacnel chexav*/
+// @import '../icon/scss/fontawesome.scss';
+// @import '../icon/scss/solid.scss';
+@import './mixin';  
+@import './header';
+@import './section_1';
+@import './section_2';
+
+.description{
+    @include blockSize(80%,auto);
+    @include padd(5px,20px);
+    h2{
+        @include font(32px,bolder,rgba(32, 20, 20,0.7));
+        @include margBottom(40px)
+    }
+    p{
+        font-size: 24px; 
+        text-align: justify;
+        @include margBottom(20px);
+       
+     
+    }
+    p:first-of-type{
+        @include margBottom(50px)
+     }
+}

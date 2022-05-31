@@ -1,0 +1,56 @@
+main{
+    width: 100%;  
+   .container{
+       @include container;
+       justify-content: center;
+
+    article{
+        @include blockSize(100px, auto);
+        @include padd(5px,0);
+            ul{ 
+                @include flex(column);
+             
+                align-items:flex-end;
+                list-style-type: none;
+                    li{ 
+                       @include flex(column);
+                       @include blockSize(70px,70px);
+                    &:nth-child(1) a{
+                            @include bgImage("https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg");
+                            background-color: rgb(89, 89, 216);
+
+                        }
+                        &:nth-child(2) a{
+                            @include bgImage("https://help.twitter.com/content/dam/help-twitter/brand/logo.png");
+                            background-color: rgb(164, 168, 241);
+
+                        }
+                        &:nth-child(3) a{
+                            @include bgImage("https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg");
+                            background-color: brown;
+
+                        }
+                        &:nth-child(4) a{
+                            @include bgImage("https://cdn-icons-png.flaticon.com/512/174/174857.png");
+                            background-color: #fff;
+                        }
+                        &:nth-child(5) a{
+                            @include bgImage("https://thumbs.dreamstime.com/b/youtube-new-155631998.jpg");                            
+                        }
+                        a{  
+                            text-decoration: none;
+                            &:hover{
+                                background-color: lightcoral;
+                            }
+                            span{
+                                display: none;
+                            }
+                           
+                        }
+                    }
+            }
+    }
+   
+   }
+      
+}

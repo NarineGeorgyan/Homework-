@@ -26,9 +26,8 @@ $border:3px solid $color;
 }
 .central-item{
     padding: 10px;
-    @include font{
-        font-size: 24px;
-    }
+    @include font(24px,yellow);
+
     ul{
         list-style-type: none;
         display: flex;
@@ -66,8 +65,9 @@ $border:3px solid $color;
                 right:-45px;
                 top: 61px;
                 li{
-                    @include padding(7px,9px );
+                  
                     a{
+                        @include padding(7px,9px );
                         display: inline-block;
                         @include font(32px, red);
                     }

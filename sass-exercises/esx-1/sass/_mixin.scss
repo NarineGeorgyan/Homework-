@@ -1,0 +1,57 @@
+@mixin bgImage($url) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@mixin flex($direction) {
+    display: flex;
+    flex-direction:$direction;
+    justify-content:center;    
+}
+@mixin blockSize ($width, $height){
+    width:$width;
+    height:$height    
+}
+@mixin padd($top, $left){
+    padding: $top $left;
+}
+@mixin margBottom($marg) {
+    margin-bottom: $marg;
+    
+}
+@mixin font($fontSize,$fontW,$color) {
+    font-size:$fontSize;
+    font-weight:$fontW ;
+    color: $color;
+}
+@mixin container {
+    background-color: $bgHeaderColor;
+    max-width: 1200px;
+    margin: 15px auto;
+    @include flex(row);
+    flex-wrap: wrap;
+  
+}
+@mixin grid($col,$row,$gapR,$gapC) {
+    display: grid;
+    grid-template-columns:repeat($col,auto);
+    grid-template-rows: repeat($row,50px);
+    grid-auto-rows: 50px;
+    grid-gap:$gapR $gapC;
+    justify-content: center;
+    
+    
+}
+@mixin icon {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+    opacity: .5;
+    justify-self: center; 
+    align-self: center;
+   
+}

@@ -15,6 +15,9 @@
 
 .central-item {
   padding: 10px;
+  font-size: 24px;
+  color: yellow;
+  font-weight: bold;
 }
 
 .central-item ul {
@@ -35,9 +38,13 @@
 }
 
 .central-item ul li a {
+  display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  padding: 12px 15px;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: grey;
+  font-weight: bold;
 }
 
 .central-item ul li:first-child {
@@ -70,5 +77,13 @@
           flex-direction: column;
   right: -45px;
   top: 61px;
+}
+
+.central-item ul li:last-child .drop-list li a {
+  padding: 7px 9px;
+  display: inline-block;
+  font-size: 32px;
+  color: red;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

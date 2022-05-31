@@ -1,0 +1,359 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* neal canaknum ei icon avelacnel chexav*/
+header {
+  width: 100%;
+  height: 70px;
+  margin-bottom: 50px;
+}
+
+header .container {
+  background-color: #c4bfbf;
+  max-width: 1200px;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .container .company-logo {
+  margin: 7px 0 7px 25px;
+}
+
+header .container .company-logo a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 150px;
+  height: 70px;
+  outline: none;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+header .container .company-logo a:hover {
+  opacity: 0.3;
+  outline: 3px solid #111010;
+}
+
+header .container .company-logo a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .nav .nav-list > div {
+  margin-right: 15px;
+}
+
+header .container .nav .nav-list > div a {
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 7px;
+  text-transform: capitalize;
+  -webkit-transition: all .5s linear;
+  transition: all .5s linear;
+}
+
+header .container .nav .nav-list > div a:hover {
+  background-color: #3f3dac;
+  outline: 1px solid black;
+}
+
+main {
+  width: 100%;
+}
+
+main .container {
+  background-color: #c4bfbf;
+  max-width: 1200px;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .container article {
+  width: 100px;
+  height: auto;
+  padding: 5px 0;
+}
+
+main .container article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  list-style-type: none;
+}
+
+main .container article ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+}
+
+main .container article ul li:nth-child(1) a {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url("https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5959d8;
+}
+
+main .container article ul li:nth-child(2) a {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url("https://help.twitter.com/content/dam/help-twitter/brand/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #a4a8f1;
+}
+
+main .container article ul li:nth-child(3) a {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url("https://www.logo.wine/a/logo/Facebook/Facebook-f_Logo-Blue-Logo.wine.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: brown;
+}
+
+main .container article ul li:nth-child(4) a {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/174/174857.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+main .container article ul li:nth-child(5) a {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-image: url("https://thumbs.dreamstime.com/b/youtube-new-155631998.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .container article ul li a {
+  text-decoration: none;
+}
+
+main .container article ul li a:hover {
+  background-color: lightcoral;
+}
+
+main .container article ul li a span {
+  display: none;
+}
+
+.container {
+  background-color: #c4bfbf;
+  max-width: 1200px;
+  margin: 15px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .grid-container {
+  background-color: black;
+  width: 20%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -ms-grid-rows: (50px)[4];
+      grid-template-rows: repeat(4, 50px);
+  grid-auto-rows: 50px;
+  grid-gap: 5px 7px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*inch e bolorn irar het gnum*/
+}
+
+.container .grid-container .box {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: capitalize;
+  opacity: 0.5;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .grid-container .box::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.container .grid-container:hover .box::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.container .grid-container svg {
+  width: 25px;
+  height: 25px;
+  fill: #fff;
+  opacity: .5;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.container .grid-container + .description {
+  background-color: #fff;
+}
+
+.description {
+  width: 80%;
+  height: auto;
+  padding: 5px 20px;
+}
+
+.description h2 {
+  font-size: 32px;
+  font-weight: bolder;
+  color: rgba(32, 20, 20, 0.7);
+  margin-bottom: 40px;
+}
+
+.description p {
+  font-size: 24px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.description p:first-of-type {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */
