@@ -1,0 +1,74 @@
+.box:not(.first) {
+  background-color: #b03434;
+  margin-bottom: 20px;
+  width: 30%;
+  height: 150px;
+  border: 3px solid yellow;
+}
+
+.box.first {
+  background-color: aqua;
+  margin-bottom: 20px;
+  width: 30%;
+  height: 150px;
+}
+
+.central-item {
+  padding: 10px;
+}
+
+.central-item ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.central-item ul li {
+  margin-left: 25px;
+  border: 3px solid yellow;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.central-item ul li a {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 12px 15px;
+}
+
+.central-item ul li:first-child {
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: darkorchid;
+}
+
+.central-item ul li:last-child {
+  position: relative;
+}
+
+.central-item ul li:last-child span {
+  border: 2px solid darkkhaki;
+}
+
+.central-item ul li:last-child .drop-list {
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: -45px;
+  top: 61px;
+}
+/*# sourceMappingURL=style.css.map */

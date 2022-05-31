@@ -1,0 +1,81 @@
+$bgcolor:rgb(176, 52, 52);
+$blockWidth:30%;
+$color:yellow;
+$border:3px solid $color;
+
+@mixin padding($top,$left) {
+  padding: $top $left;  
+}
+@mixin font($size, $color) {
+    font-size:$size;
+    color:$color;
+    font-weight: bold;
+}
+.box:not(.first){
+    background-color: $bgcolor;
+    margin-bottom: 20px;
+    width: $blockWidth;
+    height: 150px;
+    border:$border;
+}
+.box.first{
+   background-color: aqua;
+   margin-bottom: 20px;
+   width: $blockWidth;
+   height: 150px;     
+}
+.central-item{
+    padding: 10px;
+    @include font{
+        font-size: 24px;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        li{
+            margin-left: 25px;
+            border:$border;
+            font-size:24px;
+            padding: 10px;
+             a{
+                 display: inline-block;
+                 text-decoration: none;
+                 cursor: pointer;
+                @include padding(10px,15px);
+                @include font(18px, grey);
+                
+             }
+        }
+        li:first-child{
+            margin-right:auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkorchid;
+        }
+        li:last-child{
+            position: relative;
+            span{
+                border: 2px solid darkkhaki;
+               
+            }
+            .drop-list{
+                position: absolute;
+                flex-direction: column;
+                right:-45px;
+                top: 61px;
+                li{
+                    @include padding(7px,9px );
+                    a{
+                        display: inline-block;
+                        @include font(32px, red);
+                    }
+                } 
+              
+            }
+         
+        }
+     
+    }
+}
