@@ -1,3 +1,8 @@
+/* 
+@font-face{
+ font-family: xxx;
+ src:url(./fonts/OFL.txt)
+}
 *{
     margin: 0;
     padding: 0;
@@ -18,17 +23,22 @@ form{
 .vissualy-hidden{
     display: none;
 }
+body{
+    text-decoration: lin;
+}
 div>input{
     margin-bottom: 25px;
     min-height: 30px;
     padding-inline-start: 7px;
     font-size: 14px;
+    font-family: xxx;
     background-color:rgb(227, 227, 223);
 
 
 
  
 }
+
 
 input[type="email"],input[type="password"]{
     width: 100%;
@@ -100,4 +110,36 @@ p{
 }
 .link{
     text-decoration: none;
+} */
+
+li::marker{
+    color: brown;
+    font-size: 16px;
+}  
+
+h2,p{
+    padding: 0 15px;
 }
+h2::selection, p::selection{
+    background-color: yellow;
+    color: red;
+}
+
+div{
+   
+ background-image: url("https://i.pinimg.com/originals/7b/db/75/7bdb758f3927bc393ff2b2b72d4f4f6d.jpg");
+ background-repeat:repeat;
+background-size: cover;
+background-attachment: fixed;
+height: 200px;
+overflow-y: scroll;
+
+
+min-height: 500px;
+
+
+} 
+
+
+
+

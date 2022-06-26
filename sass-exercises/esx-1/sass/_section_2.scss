@@ -38,8 +38,10 @@
         }
 
     }
-    .grid-container + .description{
-        background-color: $color;
+    .grid-container +{
+        .description{
+            background-color: $color;
+    }
         
     }
 }    

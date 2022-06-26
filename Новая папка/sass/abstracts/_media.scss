@@ -1,0 +1,73 @@
+$break-point: (
+  "mobile": 375px,
+  "tablet": 744px,
+  "desktop": 1400px,
+);
+@mixin desktop {
+  @media (max-width: map-get($break-point,"desktop")) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: map-get($break-point,"tablet")) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media (max-width: map-get($break-point,"mobile")) {
+    @content;
+  }
+}
+
+.responsive-test {
+  @include tablet {
+    html {
+      font-size: 7px;
+    }
+    .header {
+      &__title {
+        text-align: center;
+        background-color: blueviolet;
+      }
+      .menu {
+        display: none;
+      }
+      &__inner-box {
+        text-align: center;
+      }
+    }
+  }
+  @include mobile {
+    html {
+      font-size: 5px;
+    }
+    .header {
+      &__title {
+        text-align: center;
+        background-color: rgb(43, 226, 58);
+      }
+      &__inner-box {
+        background-color: aqua;
+      }
+      &__logo {
+        max-width: 157px;
+      }
+      .menu {
+        display: none;
+      }
+    }
+  }
+}
+
+@mixin respond($breakpiont) {
+  @if $breakpiont == tablet {
+    @media screen and(max-width: 744) {
+      @content;
+    }
+  }
+  @if $breakpiont == phone {
+    @media screen and(max-width: 375) {
+      @content;
+    }
+  }
+}

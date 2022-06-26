@@ -1,0 +1,38 @@
+.menu {
+  &__items {
+    @include flex;
+  }
+  &__item {
+    max-width: 33.33%;
+    padding: 2rem;
+    flex-grow: 2;
+    &--focused {
+      border: 2px solid $color-dark-green;
+    }
+  }
+  &__link:link,
+  &__link:visited {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.85em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: $color-dark-green;
+    position: relative;
+  }
+  &__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: $color-black;
+    width: 1px;
+    height: 1px;
+    transition: all 0.3s linear;
+  }
+  &__link:hover {
+    &::before {
+      width: 100%;
+    }
+  }
+}

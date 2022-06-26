@@ -1,0 +1,45 @@
+.part-1 {
+  width: 100%;
+  padding: 9.6rem 17.9rem;
+  background: url("../../images/Rectangle\ 23.png");
+  position: relative;
+  .wrapper {
+    @include flex(column, center);
+    align-items: center;
+  }
+  &__description {
+    @include flex(row, center);
+    flex-wrap: nowrap;
+    margin-bottom: 8rem;
+    gap: 8.9rem;
+  }
+  &__inner {
+    max-width: 50rem;
+  }
+  &__title {
+    max-width: 41.7rem;
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.5rem;
+    line-height: 1.1em;
+
+    text-transform: capitalize;
+    color: $color-white;
+    margin-bottom: 0.71em;
+  }
+  &__text {
+    max-width: 40.1rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.5em;
+    color: $color-white;
+    margin-bottom: 1.6em;
+  }
+  &__image--armchairs {
+    max-width: 104rem;
+  }
+  &__image--plant {
+    max-width: 53.4rem;
+  }
+}

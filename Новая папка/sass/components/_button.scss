@@ -1,0 +1,29 @@
+.btn {
+  max-width: 20rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.07em;
+  text-transform: uppercase;
+  padding: 1.4em 2.85em;
+  letter-spacing: 0.15em;
+  border: none;
+  transform: translateY(0);
+  box-shadow: 0 0 5px $color-light-grey;
+  transition: transform 0.5s linear;
+
+  &--green {
+    background-color: $color-dark-green;
+    color: $color-white;
+    margin-right: 1.6rem;
+  }
+  &--white {
+    outline: 1px solid $color-dark-green;
+    color: $color-dark-green;
+  }
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+    box-shadow: 2px 4px 10px red;
+    transform: translateY(5px);
+  }
+}

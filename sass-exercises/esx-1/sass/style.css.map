@@ -6,7 +6,9 @@
         "_mixin.scss",
         "_header.scss",
         "_section_1.scss",
-        "_section_2.scss"
+        "_section_2.scss",
+        "_exp.scss"
+
     ],
     "names": [],
     "file": "style.css"

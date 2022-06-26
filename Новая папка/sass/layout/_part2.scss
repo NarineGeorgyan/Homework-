@@ -1,0 +1,100 @@
+.part-2 {
+  width: 100%;
+  background-color: $color-white;
+  padding: 9.6rem 9.9rem 10.2rem 9.6rem;
+  .wrapper {
+    @include flex(column);
+  }
+  & .main-title {
+    &__header-title {
+      font-size: 4.5rem;
+      line-height: 1.1em;
+      font-family: "Libre Baskerville";
+
+      font-weight: 400;
+      text-transform: capitalize;
+      color: #343d33;
+      margin-bottom: 1.6rem;
+      max-width: 37.5rem;
+    }
+    &__subtitle {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      line-height: 1.1em;
+      letter-spacing: 0.15em;
+      position: relative;
+      color: #475f45;
+      left: 140px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 130px;
+        height: 2px;
+        right: 148px;
+        top: 8px;
+        background: #475f45;
+      }
+      &::after {
+        content: "→";
+        position: absolute;
+        left: 145px;
+        top: 0px;
+        color: #475f45;
+        font-weight: 700;
+      }
+    }
+  }
+  &__container {
+    @include flex;
+    gap: 4.9rem;
+  }
+  & .card-box {
+    @include flex;
+    align-items: center;
+    border-bottom: 1px solid #c4c4c4;
+
+    &__image {
+      max-width: 23.6rem;
+    }
+    &__description {
+      padding: 2rem;
+    }
+    &__title {
+      font-family: "Libre Baskerville";
+      font-weight: 400;
+      font-size: 2.3rem;
+      line-height: 1.08em;
+      color: #475f45;
+      margin-bottom: 1.2rem;
+      max-width: 28rem;
+    }
+    &__text {
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.56em;
+      color: #414840;
+      margin-bottom: 1.2rem;
+      max-width: 35.4rem;
+    }
+    &__data {
+      font-style: italic;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.56em;
+      color: #343d33;
+      max-width: 28rem;
+    }
+  }
+  & .card-box:last-child {
+    border: none;
+  }
+  & .current-card {
+    padding-top: 3.2rem;
+    &__image {
+      max-width: 52rem;
+    }
+  }
+}
