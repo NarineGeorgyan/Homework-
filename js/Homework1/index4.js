@@ -15,4 +15,4 @@ function allTruthy(...args) {
   }
   return true;
 }
-console.log(allTruthy(true, true, true));
+console.log(allTruthy(true, false, true));
